@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soniya Yadav Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/693ae9b23e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo"alt="logo">
+            <a href="images/Updated_Resume.pdf" class="btn btn2" >View CV</a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievement</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+            <div class="header-text">
+                <p>Tech & Programming Aficionado</p>
+                <h1>Hi, I'm <span>Soniya Yadav</span><br>From India</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------about section------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col1">
+                    <img src="images/image.jpeg" alt="About Image">
+                </div>
+                <div class="about-col2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Results-oriented Engineering Executive with a proven track record of strong academics and solid
+                        educational
+                        background in computer science. Looking for a career opportunity where I can contribute
+                        meaningfully by applying my
+                        skills with a thoughtful and purpose-driven mind, and approaching every task with calmness and
+                        clarity. As a fresher, I
+                        offer a unique blend of enthusiasm, creativity, and a willingness to learn. In addition to my
+                        technical expertise,
+                        I possess excellent communication and interpersonal skills, making me an effective team player.
+                        My problem-solving skills,
+                        logical thinking, and adaptability enable me to tackle every challenge with ease. I have a keen
+                        interest in Data Analytics
+                        and Artificial Intelligence/Machine Learning (AI/ML), and I aim to build expertise in these
+                        fields by applying data-driven
+                        approaches to solve real-world problems and generate meaningful insights.<br><br>
+
+                        My short-term goals include:<br>
+                        1. Securing an entry-level position in a reputable software development company.<br>
+                        2. Gaining hands-on experience in software development and related technologies.<br>
+                        3. Expanding my professional network.<br><br>
+
+                        In the long term, I aim to:<br>
+                        1. Become a renowned engineer, specializing in cutting-edge technologies.<br>
+                        2. Develop innovative solutions that impact people's lives.<br>
+                        3. Lead a team of talented engineers and mentor aspiring developers.<br>
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C | CPP | Python | Core Java</li>
+                            <li><span>Database Management System</span><br>MySqL</li>
+                            <li><span>Platform</span><br>GCP | Github</li>
+                            <li><span>Tools & Technologies</span><br>Jupyter Notebook | Google Colab | Panads | Numpy |
+                                Matplotlib | Scikit-learn | Streamlit | Power BI</li>
+                            <li><span>Soft Skills</span><br>Team Player | Effective Communication | Critical & Creative
+                                thinking | Problem Solver | Tenacious Work Ethic </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span><b>2022 - Present</b></span><br>Baderia Global Institute of Engineering and
+                                Management, Jabalpur<br>Bachelor's of Technology (B.TECH) in Computer Science &
+                                Engineering<br>CGPA: 8.38 (on grading scale of 10) </li>
+                            <li><span><b>2021 - 2022</b></span><br>St. Thomas Higher Secondary School,
+                                Jabalpur<br>Higher Secondary Certification Exam (12<sup>th</sup> Class)<br>Percentage:
+                                93.6%</li>
+                            <li><span><b>2019 - 2020</b></span><br>St. Thomas Higher Secondary School,
+                                Jabalpur<br>Secondary School Certification Exam (10<sup>th</sup> Class)<br>Percentage:
+                                97%</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------projects---------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png" alt="project">
+                    <div class="layer">
+                        <h3>Ultra Translator</h3>
+                        <p>Ultra Translator is a Streamlit-based multilingual text and audio translation app using
+                            Google Translate and gTTS. Unlike Google Translate, it’s interactive, multi-modal, and
+                            customizable — supporting simultaneous multi-language translation, text-to-speech playback,
+                            real-time voice recording, and integration into custom apps or learning platforms. It
+                            enables real-time text, speech, and audio translations into 80+ languages and will soon
+                            support video translation.</p>
+                        <a href="https://github.com/soniyayadav3001/UltraTranslato" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png" alt="project">
+                    <div class="layer">
+                        <h3>Diwali Sales Analysis</h3>
+                        <p>An EDA project using Python (NumPy, Pandas, Matplotlib, Seaborn) in Jupyter/Colab to explore
+                            customer behaviour, product preferences, and sales trends during Diwali.
+                            Load and preprocess the Diwali sales dataset (User_ID, Gender, Age/Age Group, Shaadi, State,
+                            Occupation, Product_Category, Orders, Amount), perform EDA (demographics, orders/sales by
+                            gender/age/state/occupation/category) and visualize with bar/count plots.
+                            Key findings: majority buyers are females 26–35, married women buy more, top states
+                            UP/MH/KA, top categories Food/Clothing/Electronics; next steps — forecasting, interactive
+                            dashboards (Streamlit/Power BI), clustering and multi-year analysis.</p>
+                        <a href="https://github.com/soniyayadav3001/Diwali-Sales-Project" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png" alt="project">
+                    <div class="layer">
+                        <h3>Employee Attrition Dashboard</h3>
+                        <p>A Power BI project analyzing employee data to uncover patterns behind attrition and support
+                            data-driven HR decisions.
+                            Using Power BI, DAX, and Excel/CSV, it visualizes attrition by department, role, gender,
+                            age, satisfaction, performance, and salary with interactive dashboards and drill-down
+                            insights.
+                            Key findings reveal high-risk departments/roles, links between satisfaction and attrition,
+                            and tenure trends; future goals include ML-based attrition prediction, feedback metrics, and
+                            real-time Power BI deployment.</p>
+                        <a href="https://github.com/soniyayadav3001/Employee-Attrition-Dashboard" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------hidden projects---------------------- -->
+            <div class="more-projects">
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work4.png" alt="project">
+                        <div class="layer">
+                            <h3>Student Mental Health Risk Scorer</h3>
+                            <p>A simple Streamlit-based web app that helps students evaluate their mental health risk
+                                score based on factors like depression, anxiety, panic attacks, age, and CGPA.
+                                It collects student inputs through an interactive form, calculates a 0–100 risk score,
+                                and provides guidance as Low, Moderate, or High risk using a clean, user-friendly
+                                interface, the app aims to promote awareness</p>
+                            <a href="https://github.com/soniyayadav3001/Mental-Health-App" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work5.png" alt="project">
+                        <div class="layer">
+                            <h3>SONAR Rock vs. Mine Prediction</h3>
+                            <p>a machine learning project that classifies SONAR signals as rocks or mines using supervised learning.
+Built with Python, Scikit-learn, and Jupyter, it performs EDA, trains Logistic Regression, SVM, and Random Forest models, and achieves up to 92% accuracy (best with Random Forest).
+Future enhancements include deep learning integration, web app deployment (Flask/Streamlit), and optimized feature selection for improved performance.</p>
+                           <a href="https://github.com/soniyayadav3001/SONAR-Rock-vs-Mine-Prediction-with-Python" target="_blank"
+                            rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="seeMoreBtn" class="btn">See More</button>
+        </div>
+    </div>
+    <!-- -----------------------Achievements------------------------ -->
+    <div id="achievements">
+        <div class="container">
+            <h1 class="sub-title">My Achievements</h1>
+            <div class="work-list ach">
+                <div class="work ach">
+                    <img src="images/SIH2025.jpg" alt="SIH2025">
+                    <div class="layer ach">
+                        <p>Team secured position in Top 10 in Internal Smart India Hackathon 2025</p>
+                    </div>
+                </div>
+                <div class="work ach">
+                    <img src="images/AIHackathon.jpg" alt="AIHackathon">
+                    <div class="layer ach">
+                        <p>Team secured 4th position in Internal Institute Level Hackathon on AI in Healthcare and got "Encouragement Prize"</p>
+                    </div>
+                </div>
+                <div class="work ach">
+                    <img src="images/SIH2024.jpg" alt="SIH2024">
+                    <div class="layer ach">
+                        <p>Team secured 2nd position in Internal Smart India Hackathon 2025</p>
+                    </div>
+                </div>
+               <div class="work ach">
+                    <img src="images/GCP.png" alt="GCP">
+                    <div class="layer ach">
+                        <p>Received many Google cloud goodies by actively participating in Arcade program for 6 seasons.
+                        </p>
+                    </div>
+                </div>
+                <div class="work ach">
+                    <img src="images/Scholarship.jpg" alt="Scholarship">
+                    <div class="layer ach">
+                        <p>Honoured with M. L. Sood Memorial Scholarship, a prestigious merit-based award recognizing top academic performers and empowering students to excel.
+                        </p>
+                    </div>
+                </div>
+                <div class="work ach">
+                    <img src="images/12photo.jpg" alt="12th">
+                    <div class="layer ach">
+                        <p>Class 12th topper with 93.6% in the PCM stream, securing the highest marks among all streams.</p>
+                    </div>
+                </div>
+                <div class="work ach">
+                    <img src="images/NCC.png" alt="NCC">
+                    <div class="layer ach">
+                        <p>Earned the NCC ‘A’ Certificate and received a medal for securing 1st position in rifle shooting at the NCC training camp.</p>
+                    </div>
+                </div>
+                <div class="work ach">
+                    <img src="images/10th.jpg" alt="10th">
+                    <div class="layer ach">
+                        <p>Class 10th topper with 97%, achieving a perfect 100/100 in Mathematics.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------certificates-------------------- -->
+
+    <div id="certificates">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <table>
+                <tr>
+                    <th>Name of the certificate</th>
+                    <th>link</th>
+                </tr>
+                <tr>
+                    <td>Naukri Campus Young Turks 2025</td>
+                    <td><a href="Certificate/certificate1.png"><i
+                                class="fa-solid fa-angles-right"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Internal Smart India Hackathon (2023 2024 2025)</td>
+                    <td><a href="Certificate/SIH.jpg"><i class="fa-solid fa-angles-right"></i></a></td>
+                </tr>
+                <tr>
+                        <td>Internal Institute Level Hackathon on AI in Healthcare.</td>
+                        <td><a href="Certificate/AIHack.jpg"><i class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                <tr>
+                    <td>SQL (Basic) from HackerRank</td>
+                    <td><a href="Certificate/hackerrank.png"><i
+                                class="fa-solid fa-angles-right"></i></a></td>
+                </tr>
+                <tr>
+                    <td>Natural Language Processing from NPTEL</td>
+                    <td><a href="Certificate/NPTEL.png"><i
+                                class="fa-solid fa-angles-right"></i></a></td>
+                </tr>
+
+                <!-- ---------hidden certificate---------- -->
+                <tbody class="more-certificates">
+                    <tr>
+                        <td>Project Management Fundamentals by IBM</td>
+                        <td><a href="Certificate/project management.png"><i
+                                    class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>IBM skillsbuild internship with CSRBOX on AI-ML</td>
+                        <td><a href="Certificate/AIML.png"><i
+                                    class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Data Visualization with Power BI</td>
+                        <td><a href="Certificate/powerbi.png"><i
+                                    class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>AWS Academy Cloud Foundations</td>
+                        <td><a href="Certificate/AWS.png"><i class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Programming Essentials in C by Cisco</td>
+                        <td><a href="Certificate/C.png"><i class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Programming Essentials in C++ by Cisco</td>
+                        <td><a href="Certificate/C++.png"><i class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Programming Essentials in Python by Cisco</td>
+                        <td><a href="Certificate/python.png"><i class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Cybersecurity by Cisco.</td>
+                        <td><a href="Certificate/cyber.png"><i class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Myntra Hacker-Ramp WeForShe</td>
+                        <td><a href="Certificate/myntra.png"><i class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Generative AI Fundamentals by Databricks Academy.</td>
+                        <td><a href="Certificate/databricks.png"><i class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>School Academics Certification.</td>
+                        <td><a href="Certificate/merit.jpg"><i class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Certificate of Appreciation.</td>
+                        <td><a href="Certificate/pared.jpg"><i class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                    <tr>
+                        <td>Extra Curriculum Activity in School Level.</td>
+                        <td><a href="Certificate/School.jpg"><i class="fa-solid fa-angles-right"></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="seeCertificate" class="btn">See More</button>
+        </div>
+    </div>
+
+    <!-- -----------------------contact-------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>soniyayadav3001@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 6261879981</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/soniyayadav3001" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/soniya-yadav-453167256/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="images/Updated_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Soniya. Made with <i class="fa-solid fa-heart heart"></i>
+                by Soniya Yadav </p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        const seeMoreBtn = document.getElementById('seeMoreBtn');
+        const moreProjects = document.querySelector('.more-projects');
+
+        seeMoreBtn.addEventListener('click', () => {
+            moreProjects.classList.toggle('show');
+            seeMoreBtn.textContent = moreProjects.classList.contains('show') ? 'See Less' : 'See More';
+        });
+
+        const seeCertificate = document.getElementById('seeCertificate');
+        const moreCertificates = document.querySelector('.more-certificates');
+        seeCertificate.addEventListener('click', () => {
+            moreCertificates.classList.toggle('show');
+            seeCertificate.textContent = moreCertificates.classList.contains('show') ? 'See Less' : 'See More';
+        });
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <!-- ----------contact-form-script------------- -->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxm08_9CqLpppxn_UAMmZjR0dmx7dWWNNaF5Hn_Jzer0A-6aJdgNEi1FXzQpuIqv8_U/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfullly !!!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
